@@ -1,6 +1,8 @@
 # forcemax
 Force Windows window to maximize and additionally make it borderless, useful for games that has it's maximize button is disabled e.g DMM version of デレステ
 
+[Download Latest](https://github.com/EmiyaSyahriel/forcemax/releases/latest) | [All Downloads](https://github.com/EmiyaSyahriel/forcemax/releases)
+
 ## Features
 - Make window fullscreen
 - Make window borderless
