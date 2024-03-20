@@ -18,7 +18,7 @@ May also applicable to Visual Studio Code
 - On the target selection, choose `forcemax.exe`
 - Click the Green Play button to build and start the app
 
-### Using MINGW
+### Using MinGW
 #### Prerequisites
 - CMake
 - GCC
