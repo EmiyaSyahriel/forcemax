@@ -20,10 +20,10 @@ Force Windows window to maximize and additionally make it borderless, useful for
 - `-c, --class-name [window_class_name=null]`<br/>
     Select by window class name
 
-- `-n, --window-name` [window_name=null]<br/>
+- `-n, --window-name [window_name=null]`<br/>
     Select by window name / caption / title
 
-- `-h, --handle-window` [hwnd=null]<br/>
+- `-h, --handle-window [hwnd=null]`<br/>
     Select by window handle (HWND)
 
 - `-r, --restore`<br/>
@@ -40,6 +40,12 @@ Force Windows window to maximize and additionally make it borderless, useful for
 
 - `-C, --corner`<br/>
     Move window to top-left of monitor (sometimes not working)
+
+e.g : 
+```bat
+:: Make deresute window maximized and borderless
+forcemax.exe -n "imascgstage" --maximize --borderless
+```
 
 > If the target window is elevated / launched using Run As Administrator (e.g デレステ DMM ver.), this program
 > will also needs to be run on elevated environment (e.g `cmd` that is launched using Run as Administrator)
