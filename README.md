@@ -3,9 +3,14 @@ Force Windows window to maximize and additionally make it borderless, useful for
 
 [Download Latest](https://github.com/EmiyaSyahriel/forcemax/releases/latest) | [All Downloads](https://github.com/EmiyaSyahriel/forcemax/releases)
 
+## System Requirements
+- Windows 10 64-bit (for release, Vista 32-bit if recompiled using C compiler of that age)
+- 50kB of free storage
+- 100kB of free RAM
+
 ## Features
-- Make window fullscreen
-- Make window borderless
+- Maximize window
+- Remove / restore window border
 - Return the window border (not guaranteed to be the same border, just works for the most)
 
 ## Usage
