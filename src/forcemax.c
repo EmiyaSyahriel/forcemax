@@ -107,13 +107,26 @@ int main(INT32 argc, LPCSTR argv[]) {
 		HMONITOR hMon = MonitorFromWindow(hWnd, MONITOR_DEFAULTTOPRIMARY);
 		MONITORINFOEX hMI;
 		ZeroMemory(&hMI, sizeof(MONITORINFOEX));
+
+		#ifdef __TINYC__
+		hMI.mi.cbSize = sizeof(MONITORINFOEX);
+		#else
 		hMI.cbSize = sizeof(MONITORINFOEX);
+		#endif
+
 		INT32 x, y, w, h, move;
 		if (move = GetMonitorInfo(hMon, &hMI)) {
-			x = hMI.rcMonitor.left;
-			y = hMI.rcMonitor.top;
-			w = hMI.rcMonitor.right - hMI.rcMonitor.left;
-			h = hMI.rcMonitor.bottom - hMI.rcMonitor.top;
+
+			#ifdef __TINYC__
+			RECT rc = hMI.mi.rcMonitor;
+			#else
+			RECT rc = hMI.rcMonitor;
+			#endif
+
+			x = rc.left;
+			y = rc.top;
+			w = rc.right - rc.left;
+			h = rc.bottom - rc.top;
 		}
 		if (move) SetWindowPos(hWnd, NULL, x, y, w, h, SWP_ASYNCWINDOWPOS | SWP_NOZORDER);
 	}
