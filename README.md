@@ -15,8 +15,8 @@ Force Windows window to maximize and additionally make it borderless, useful for
 
 ## Usage
 > [!CAUTION]
-> This program might trigger some anti-cheat and some will actually ban your game account since this program is
-> program modifies part of the game state (in the Windows' surface actually, not that deep, but some anti-cheat does not 
+> This program might trigger some anti-cheat and some will actually ban your game account since this program will
+> modify part of the game state (in the Windows' surface actually, not that deep, but some anti-cheat does not 
 > tolerate this behaviour). I won't take any responsibility if you got your account banned, take the risk on your own.
 
 - `-h, --help`<br/>
