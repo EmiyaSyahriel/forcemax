@@ -55,7 +55,7 @@ forcemax.exe -n "imascgstage" --maximize --borderless
 > [!TIP]
 > If the target window is elevated / launched using Run As Administrator (e.g デレステ DMM ver.), this program
 > will also needs to be run on elevated environment (e.g `cmd` that is launched using Run as Administrator)
-> or otherwise no effect will be working.
+> or otherwise it's not going to work properly.
 
 ## Building
 see [Building](BUILDING.MD)
