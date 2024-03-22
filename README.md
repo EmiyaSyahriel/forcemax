@@ -5,8 +5,8 @@ Force Windows window to maximize and additionally make it borderless, useful for
 
 ## System Requirements
 - Windows 10 32-bit (for release, Vista 32-bit if recompiled using C compiler of that age)
-- 50kB of free storage
-- 100kB of free RAM
+- 50kB of free storage (300kB for debug build)
+- 100kB of free RAM (500kB for debug build)
 
 ## Features
 - Maximize window
@@ -14,6 +14,11 @@ Force Windows window to maximize and additionally make it borderless, useful for
 - Return the window border (not guaranteed to be the same border, just works for the most)
 
 ## Usage
+> [!CAUTION]
+> This program might trigger some anti-cheat and some will actually ban your game account since this program is
+> program modifies part of the game state (in the Windows' surface actually, not that deep, but some anti-cheat does not 
+> tolerate this behaviour). I won't take any responsibility if you got your account banned, take the risk on your own.
+
 - `-h, --help`<br/>
     Show help
 
@@ -47,6 +52,7 @@ e.g :
 forcemax.exe -n "imascgstage" --maximize --borderless
 ```
 
+> [!TIP]
 > If the target window is elevated / launched using Run As Administrator (e.g デレステ DMM ver.), this program
 > will also needs to be run on elevated environment (e.g `cmd` that is launched using Run as Administrator)
 > or otherwise no effect will be working.
